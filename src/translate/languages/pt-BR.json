@@ -101,6 +101,7 @@
         "label": "Canal",
         "baileys": "Baileys",
         "whatsapp": "WhatsApp Cloud API",
+        "webjs": "WhatsApp Web JS",
         "facebook": "Facebook",
         "instagram": "Instagram",
         "evolution": "Evolution"
@@ -128,8 +129,12 @@
           "label": "Gerar Código de Pareamento",
           "title": "Faça o pareamento com o WhatsApp"
         },
+        "screenshot": "Capturar tela",
         "restart": "Reiniciar",
         "disconnect": "Desconectar"
+      },
+      "screenshot": {
+        "title": "Screenshot do WebJS"
       },
       "alert": "Para conectar, escaneie o QR Code com o WhatsApp",
       "contacts": "Contatos",

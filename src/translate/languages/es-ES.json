@@ -101,6 +101,7 @@
         "label": "Canal",
         "baileys": "Baileys",
         "whatsapp": "WhatsApp Cloud API",
+        "webjs": "WhatsApp Web JS",
         "facebook": "Facebook",
         "instagram": "Instagram",
         "evolution": "Evolution"

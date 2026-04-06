@@ -121,6 +121,7 @@
         "label": "Channel",
         "baileys": "Baileys",
         "whatsapp": "WhatsApp Cloud API",
+        "webjs": "WhatsApp Web JS",
         "facebook": "Facebook",
         "instagram": "Instagram",
         "evolution": "Evolution"
@@ -148,8 +149,12 @@
           "label": "Get Pairing Code",
           "title": "Get the pairing code to connect with WhatsApp"
         },
+        "screenshot": "Take Screenshot",
         "restart": "Restart",
         "disconnect": "Disconnect"
+      },
+      "screenshot": {
+        "title": "WebJS Screenshot"
       },
       "alert": "To connect, scan the QR code with your WhatsApp Web",
       "contacts": "Contacts",

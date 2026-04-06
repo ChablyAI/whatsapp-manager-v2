@@ -26,7 +26,7 @@ const FormSchema = z.object({
   token: stringOrUndefined,
   number: stringOrUndefined,
   businessId: stringOrUndefined,
-  integration: z.enum(["WHATSAPP-BUSINESS", "WHATSAPP-BAILEYS", "EVOLUTION"]),
+  integration: z.enum(["WHATSAPP-BUSINESS", "WHATSAPP-BAILEYS", "WHATSAPP-WEB-JS", "EVOLUTION"]),
 });
 
 function NewInstance({ resetTable }: { resetTable: () => void }) {
@@ -41,6 +41,10 @@ function NewInstance({ resetTable }: { resetTable: () => void }) {
     {
       value: "WHATSAPP-BUSINESS",
       label: t("instance.form.integration.whatsapp"),
+    },
+    {
+      value: "WHATSAPP-WEB-JS",
+      label: t("instance.form.integration.webjs"),
     },
     {
       value: "EVOLUTION",
