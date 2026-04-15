@@ -76,6 +76,14 @@ function Dashboard() {
     { value: "open", label: t("status.open") },
   ];
 
+  const getIntegrationLabel = (integration?: string) => {
+    if (!integration) {
+      return "-";
+    }
+
+    return t(`instance.form.integration.${integration}`, { defaultValue: integration });
+  };
+
   return (
     <div className="my-4 px-4">
       <div className="flex w-full items-center justify-between">
@@ -132,6 +140,10 @@ function Dashboard() {
               </CardHeader>
               <CardContent className="flex-1 space-y-6">
                 <InstanceToken token={instance.token} />
+                <div className="flex items-center justify-between rounded-md border px-3 py-2 text-sm">
+                  <span className="text-muted-foreground">{t("instance.dashboard.channel")}</span>
+                  <span className="font-medium">{getIntegrationLabel(instance.integration)}</span>
+                </div>
                 <div className="flex w-full flex-wrap">
                   <div className="flex flex-1 gap-2">
                     {instance.profileName && (

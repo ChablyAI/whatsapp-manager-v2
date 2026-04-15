@@ -133,6 +133,7 @@
         "disconnect": "Desconectar"
       },
       "alert": "Para conectar, escanea el Código QR con WhatsApp",
+      "channel": "Canal",
       "contacts": "Contactos",
       "chats": "Chats",
       "messages": "Mensajes"

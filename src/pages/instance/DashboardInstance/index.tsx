@@ -119,6 +119,16 @@ function DashboardInstance() {
     return "#189d68";
   }, [theme]);
 
+  const integrationLabel = useMemo(() => {
+    if (!instance?.integration) {
+      return "-";
+    }
+
+    return t(`instance.form.integration.${instance.integration}`, {
+      defaultValue: instance.integration,
+    });
+  }, [instance?.integration, t]);
+
   if (!instance) {
     return <LoadingSpinner />;
   }
@@ -136,6 +146,10 @@ function DashboardInstance() {
           <CardContent className="flex flex-col items-start space-y-6">
             <div className="flex w-full flex-1">
               <InstanceToken token={instance.token} />
+            </div>
+            <div className="flex w-full items-center justify-between rounded-md border px-3 py-2 text-sm">
+              <span className="text-muted-foreground">{t("instance.dashboard.channel")}</span>
+              <span className="font-medium">{integrationLabel}</span>
             </div>
 
             {instance.profileName && (

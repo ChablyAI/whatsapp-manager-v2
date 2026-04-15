@@ -157,6 +157,7 @@
         "title": "WebJS Screenshot"
       },
       "alert": "To connect, scan the QR code with your WhatsApp Web",
+      "channel": "Channel",
       "contacts": "Contacts",
       "chats": "Chats",
       "messages": "Messages"
